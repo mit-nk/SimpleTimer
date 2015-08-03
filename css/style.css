@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+
+html,body {
+    text-align:center;
+    color:darkgray;
+    min-height:100%;
+    min-width:100%;
+    font-family: 'Dancing Script', cursive;
+}
+#headline {
+    font-size: 40px;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+
+.push {
+    width:70px;
+    height:70px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 0px;
+    display: inline-block;
+    padding:1px;
+    margin:0 auto;
+    border:groove 3px #e0e0e0;
+    border-radius: 50px;
+    line-height:70px;
+    cursor:pointer;
+    background-color: lavenderblush;
+}
+.push:hover {
+    border:ridge 3px #e0e0e0;
+    opacity: 0.9;
+    box-shadow: 3px 3px 0 #e0e0e0;
+}
+
+.push + .push {
+    margin: 10px;
+}
+
+.push.active {
+    opacity: 1.0;
+}
+
+.push.inactive {
+    opacity: 0.7;
+}
+
+input[type="number"] {
+    width:70px;
+    height:70px;
+    text-align: center;
+    font-size: 42px;
+    border-radius: 50px;
+    background-color: darkgray;
+    color: whitesmoke;
+    border:groove 3px #e0e0e0;
+    cursor:pointer;
+    font-family: 'Dancing Script', cursive;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover {
+    opacity: 0.8;
+}
+
+input + input {
+    margin: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*:focus {
+    outline:none;
+}
